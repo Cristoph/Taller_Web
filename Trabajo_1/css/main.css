@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #212121;
     box-shadow: 0 1px 10px rgba(0,0,0,.5);
     border-radius: 4px;
-    
+
 }
 
 img {
@@ -69,8 +69,10 @@ input:focus {
 }
 
 .group{
-    display: table-cell; 
-    vertical-align: middle
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 10px;
+    margin-top: 10px;
 }
 
 .group h2{
@@ -92,7 +94,7 @@ input:focus {
 
 .img-back{
     background-repeat: no-repeat;
-    background-position: 50% 0; 
+    background-position: 50% 0;
 }
 
 .TWD1 {
@@ -117,7 +119,6 @@ input:focus {
     border-radius: 4px;
      display: block;
     margin: 0 auto;
-
 }
 
 .btn:hover {
@@ -125,3 +126,20 @@ input:focus {
     color: #e1e1e1;
 }
 
+#Data h3{
+  font-weight: bold;
+}
+
+td{
+  padding: 10px;
+}
+
+tr td:first-child{
+  font-weight: bold;
+}
+
+td img{
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+}

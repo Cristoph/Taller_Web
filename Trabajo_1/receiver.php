@@ -1,4 +1,4 @@
-<?php 
+<?php
     $game      = $_GET['game'];
     $game_name = "";
     $name      = $_GET['name']; //
@@ -20,7 +20,7 @@ switch ($country) {
     case "co":
         $greeting = "Parcero!! ... ";
         break;
-        
+
 }
 //TODO: eliminar $img, renombrar imgenes como code y concatenar
 switch ($game) {
@@ -48,7 +48,7 @@ switch ($game) {
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body class="<?php echo $game ?> img-back">
-    
+
         <div id="Greeting" class="box center">
             <div class="fieldgroup">
                 <h2><?php echo $greeting?> <strong><?php echo $name?></strong>... Gracias por Votar!!</h2>
@@ -64,15 +64,27 @@ switch ($game) {
                 <h2 class="text-center"> +1 Voto</h2>
             </div>
         </div>
-        
+
         <div id="Data" class="box center">
-            <h3>Tus Datos Personales:</h3>
-            <label>Nombre: <?php echo $name ?> </label>
-            <p>E-mail: <?php echo $email ?> </p>
-            <p>Sexo: <?php echo $sex=="H" ? 'Hombre' : 'Mujer' ?> </p>
-            <p>Pais: <img src="img/none.png" class="flag flag-<?php echo $country ?>" alt="" /></p>
+            <h3 class="text-center">Tus Datos Personales</h3>
+            <table>
+              <tr>
+                <td>Nombre:</td>
+                <td><?php echo $name ?></td>
+              </tr>
+              <tr>
+                <td>E-mail:</td>
+                <td><?php echo $email ?></td>
+              <tr>
+                <td>Sexo:</td>
+                <td><?php echo $sex=="H" ? 'Hombre' : 'Mujer' ?></td>
+              </tr>
+                <td>Pais:</td>
+                <td><img src="img/none.png" class="flag flag-<?php echo $country ?>" alt="" /></td>
+              </tr>
+            </table>
         </div>
-        
-        
+
+
     </body>
 </html>
