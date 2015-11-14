@@ -22,16 +22,19 @@ switch ($country) {
         break;
         
 }
-
+//TODO: eliminar $img, renombrar imgenes como code y concatenar
 switch ($game) {
     case "TWD1":
         $game_name = "The Walking Dead: Season 1";
+        $img = "twd_s1_mini.jpg";
         break;
     case "TWD2":
         $game_name = "The Walking Dead: Season 2";
+        $img = "twd_s2_mini.jpg";
         break;
     case "TWD400":
-        $greeting = "";
+        $game_name = "The Walking Dead: 400 Days";
+        $img = "twd_400_mini.jpg";
         break;
 }
 
@@ -46,22 +49,25 @@ switch ($game) {
     </head>
     <body class="<?php echo $game ?> img-back">
     
-        <div class=" box">
+        <div id="Greeting" class="box center">
             <div class="fieldgroup">
-                <h2><?php echo $greeting .$name ?> ... Gracias por Votar!!</h2>
+                <h2><?php echo $greeting?> <strong><?php echo $name?></strong>... Gracias por Votar!!</h2>
             </div>
         </div>
 
-        <div class=" box">
-            <div class="fieldgroup">
-                <h3>+1 Voto a: <?php echo $game_name ?></h3>
+        <div id="Voto" class="box center">
+            <div>
+                <img src="img/<?php echo $img ?>" />
+            </div>
+            <div class="group">
+                <h3><?php echo $game_name ?></h3>
+                <h2 class="text-center"> +1 Voto</h2>
             </div>
         </div>
         
-        
-        <div class="box">
+        <div id="Data" class="box center">
             <h3>Tus Datos Personales:</h3>
-            <p>Nombre: <?php echo $name ?> </p>
+            <label>Nombre: <?php echo $name ?> </label>
             <p>E-mail: <?php echo $email ?> </p>
             <p>Sexo: <?php echo $sex=="H" ? 'Hombre' : 'Mujer' ?> </p>
             <p>Pais: <img src="img/none.png" class="flag flag-<?php echo $country ?>" alt="" /></p>
