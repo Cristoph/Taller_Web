@@ -1,0 +1,118 @@
+body {
+    font-family: Open Sans,sans-serif;
+    background-color: #ccc;
+    margin: auto;
+    padding: 2em 2em 2em 4em;
+    max-width: 800px;
+    font-size: 16px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+
+.box{
+    display:table;
+    table-layout:fixed;
+    background: #e1e1e1;
+    color: #212121;
+    box-shadow: 0 1px 10px rgba(0,0,0,.5);
+    border-radius: 4px;
+    
+}
+
+img {
+    border-radius: 4px;
+    display: block;
+    margin: 1.3em auto;
+}
+
+div {
+    margin: 20px 10px;
+}
+
+.center{
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+#Personal label {
+    display: inline-block;
+    width:100px;
+    text-align: right;
+}
+
+#Personal input {
+    width: 300px;
+}
+
+#Country .fieldgroup{
+    margin-top: -20px;
+}
+
+input:focus {
+    border-color: #000;
+}
+
+.text-center {
+    text-align: center;*/
+}
+
+
+.fieldgroup{
+    float: left;
+    width: auto;
+    margin-left: 1em;
+    padding-right: 4px;
+}
+
+
+.flag {
+	width: 32px;
+	height: 32px;
+	background:url(../img/flags.png) no-repeat
+}
+
+.flag.flag-ar {background-position: -32px 0}
+.flag.flag-br {background-position: -64px 0}
+.flag.flag-cl {background-position: 0 -32px}
+.flag.flag-co {background-position: -32px -32px}
+
+
+.img-back{
+    background-repeat: no-repeat;
+    background-position: 50% 0; 
+}
+
+.TWD1 {
+    background-image: url(../img/twd_s1.jpg);
+
+}
+
+.TWD2 {
+    background-image: url(../img/twd_s2.jpg);
+}
+
+.TWD400{
+    background-image: url(../img/twd_400.jpg);
+}
+
+.btn {
+    font-size: 24px;
+    color: #212121;
+    background: #e1e1e1;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0 1px 5px rgba(0,0,0,.4);
+    border-radius: 4px;
+     display: block;
+margin: 0 auto;
+
+}
+
+.btn:hover {
+    background: #212121;
+    color: #e1e1e1;
+}
+

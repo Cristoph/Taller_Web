@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        
+        
+        <h1 class="text-center">Vota por tu juego favorito!!</h1>
+        
+        <form action="receiver.php">
+            <!-- -------------------------------------- -->
+            <div id="Game">
+                <div class="fieldgroup box">
+                    <img src="img/twd_s1_mini.jpg" />
+                    <input type="radio" name="game" value="TWD1" required>
+                    <label>The Walking Dead: Season 1</label>
+                </div>
+                <div class="fieldgroup box">
+                    <img src="img/twd_s2_mini.jpg" />
+                    <input type="radio" name="game" value="TWD2">
+                    <label>The Walking Dead: Season 2</label>
+                </div>
+                <div class="fieldgroup box">
+                    <img src="img/twd_400_mini.jpg" />
+                    <input type="radio" name="game" value="TWD400">
+                    <label>The Walking Dead: 400 Days</label>
+                </div>
+            </div>
+            <!-- -------------------------------------- -->
+            <div id="Personal" class="box center">
+                <div>
+                    <label for="name">Nombre: </label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div>
+                    <label for="mail">E-mail: </label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div>
+                    <label for="msg">Sexo:</label>
+                    <select name="sex" required>
+                        <option value="-"></option>
+                        <option value="H">Hombre</option>
+                        <option value="M">Mujer</option>
+
+                    </select>
+                </div>
+            </div>
+            <!-- -------------------------------------- -->
+            <div id="Country" class="box center">
+                <h3 class="text-center">Donde Vives??</h3>
+
+                <div class="fieldgroup">
+                    <img src="img/none.png" class="flag flag-cl" alt="" />
+                    <input type="radio" name="country" value="cl" required>
+                </div>
+                <div class="fieldgroup">
+                    <img src="img/none.png" class="flag flag-ar" alt="" />
+                    <input type="radio" name="country" value="ar">
+                </div>
+                <div class="fieldgroup">
+                    <img src="img/none.png" class="flag flag-br" alt="" />
+                    <input type="radio" name="country" value="br">
+                </div>
+                <div class="fieldgroup">
+                    <img src="img/none.png" class="flag flag-co" alt="" />
+                    <input type="radio" name="country" value="co">
+                </div>
+            </div>
+            <!-- -------------------------------------- -->
+            <div id="Submit">
+                <button type="submit" class="btn">Votar !!</button>
+            </div>
+            <!-- -------------------------------------- -->
+        </form>
+    </body>
+</html>
