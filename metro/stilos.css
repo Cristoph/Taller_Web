@@ -1,0 +1,21 @@
+@charset "utf-8";
+body {
+	margin-top:-20px;
+	
+	}
+	.fondofoto{
+		background-image:url(images/3.jpg);
+		background-size:cover;
+		}
+		.bg-white-60{
+			background-color:rgba(255,255,255,0.6);
+			
+			}
+		
+		
+		
+		
+		
+		
+/* CSS Document */
+
