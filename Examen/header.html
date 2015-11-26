@@ -2,67 +2,45 @@
   
   <div class="container">
     <div class="" data-role="appbar">
-                    <a class="app-bar-element branding">Metro UI CSS</a>
-                    <span class="app-bar-divider"></span>
+        <a class="app-bar-element branding">Logo + Store</a>
+                  <span class="app-bar-divider"></span>
                     <ul class="app-bar-menu">
-                        <li data-flexorderorigin="0" data-flexorder="1"><a href="">Home</a></li>
+                        <li data-flexorderorigin="0" data-flexorder="1">
+                            <a href="" class="dropdown-toggle">Productos</a>
+                            <ul class="d-menu" data-role="dropdown">
+                                <li><a href="">Juegos PS4</a></li>
+                                <li><a href="">Juegos One</a></li>
+                            </ul>
+                        </li>
                         <li data-flexorderorigin="1" data-flexorder="2">
-                            <a href="" class="dropdown-toggle">Products</a>
+                            <a href="" class="dropdown-toggle">Ayuda</a>
                             <ul class="d-menu" data-role="dropdown">
-                                <li><a href="">Windows 10</a></li>
-                                <li><a href="">Spartan</a></li>
-                                <li><a href="">Outlook</a></li>
-                                <li><a href="">Office 2015</a></li>
-                                <li class="divider"></li>
-                                <li><a href="" class="dropdown-toggle">Other Products</a>
-                                    <ul class="d-menu" data-role="dropdown">
-                                        <li><a href="">Internet Explorer 10</a></li>
-                                        <li><a href="">Skype</a></li>
-                                        <li><a href="">Surface</a></li>
-                                    </ul>
-                                </li>
+                                <li><a href="">Como Comprar</a></li>
+                                <li><a href="">Quienes Somos</a></li>
                             </ul>
                         </li>
-                        <li data-flexorderorigin="2" data-flexorder="3">
-                            <a href="" class="dropdown-toggle">Support</a>
-                            <ul class="d-menu" data-role="dropdown">
-                                <li><a href="">About</a></li>
-                                <li><a href="">Contacts</a></li>
-                                <li><a href="">Community forum</a></li>
-                                <li>
-                                    <a href="" class="dropdown-toggle">Support</a>
-                                    <ul class="d-menu" data-role="dropdown">
-                                        <li><a href="" class="dropdown-toggle">About</a></li>
-                                        <li><a href="">Contacts</a></li>
-                                        <li><a href="">Community forum</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li data-flexorderorigin="3" data-flexorder="4"><a href="">Help</a></li>
                     </ul>
                     <div class="app-bar-element place-right">
-                        <a class="dropdown-toggle fg-white"><span class="mif-enter"></span> Enter</a>
+                        <a class="dropdown-toggle fg-white"><span class="mif-enter"></span> Mi Cuenta</a>
                         <div class="app-bar-drop-container place-right" data-role="dropdown" data-no-close="true">
                             <div class="padding20">
                                 <form>
-                                    <h4 class="text-light">Login to service...</h4>
+                                    <h4 class="text-light">Tu Cuenta...</h4>
                                     <div class="input-control text">
                                         <span class="mif-user prepend-icon"></span>
-                                        <input type="text">
+                                        <input type="text" placeholder="Usuario">
                                     </div>
                                     <div class="input-control text">
                                         <span class="mif-lock prepend-icon"></span>
-                                        <input type="password">
+                                        <input type="password" placeholder="Contraseña">
                                     </div>
                                     <label class="input-control checkbox small-check">
                                         <input type="checkbox">
                                         <span class="check"></span>
-                                        <span class="caption">Remember me</span>
+                                        <span class="caption">Recordarme</span>
                                     </label>
-                                    <div class="form-actions">
-                                        <button class="button primary">Login</button>
-                                        <button class="button link fg-grayLighter">Cancel</button>
+                                    <div class="form-actions align-center">
+                                        <button class="button primary">Ingresar</button>
                                     </div>
                                 </form>
                             </div>
