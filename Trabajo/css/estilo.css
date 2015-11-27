@@ -1,0 +1,60 @@
+/* CSS Document */
+
+body {
+    height: 800px;
+    position: relative;
+		background:url(../img/Fondo.jpeg) no-repeat center center fixed;
+		background-size: cover;
+		font-family:Verdana, Geneva, sans-serif;
+		width:1000px;
+		margin:0 auto;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+		margin-top: 100px;
+    height: 70px;
+}
+
+.trans{
+	padding: 20px;
+	background: #000000;
+	opacity:0.8;
+	color: #FFF;
+	padding-bottom: 0px;
+	margin-right: 10px;
+}
+
+a{
+		color: #FFF;
+}
+
+header{
+	height::460px;
+	margin:0 auto;
+	text-align: center;
+}
+#col1{
+		height:440px;
+		width:220px;
+		float:left;
+
+		}
+#col2{
+		height:460px;
+		width:600px;
+		float:left
+		}
+#col3{
+	height:460px;
+	width:120px;
+	float:left
+	}
+
+
+
+h3,p{
+	margin-top: 0px;
+}
