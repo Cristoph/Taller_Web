@@ -2,15 +2,15 @@
 
 /* HEADER */
 .f-menu > li > a {
-  background-color: #00aff0 !important;
+  background-color: #2774C0 !important;
   color: white;
   font-weight: bold;
-} 
+}
 
 .f-menu > li > a:hover {
   background-color: white !important;
-  color: #00aff0;
-} 
+  color: #2774C0;
+}
 
 .set-border-strong {
       border: 1px #ffffff solid;
@@ -19,3 +19,31 @@
 
 
 /* ************************************ */
+
+.bg-fun{
+background: #2774C0 !important;
+}
+
+.box{
+  background: #2267AB !important;
+  height: 160px;
+  color: white;
+
+}
+
+
+
+
+/* ************************************ */
+
+.padding-top-10{
+  padding-top: 10px;
+
+}
+.padding-top-40{
+  padding-top: 40px;
+}
+
+.bold{
+  font-weight: bold;
+}
