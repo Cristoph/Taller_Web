@@ -1,55 +1,38 @@
 <header class="app-bar  fixed-top darcula" data-role="appbar">
 
   <div class="container">
-    <div class="" data-role="appbar">
-        <a class="app-bar-element branding">Logo + Store</a>
-                  <span class="app-bar-divider"></span>
-                    <ul class="app-bar-menu">
+    <div class="" data-role="appbar app-bar darcula">
+        <ul class="app-bar darcula h-menu ">
+                <li>
+                    <a href="index.html" class="app-bar-element branding">
+                    <img src="images/logo2.jpg" style="height: 48px; display: inline-block; margin-right: 10px;"> Bar Code 
+                    </a>
+                    <span class="app-bar-divider"></span>
+                </li>
                         <li data-flexorderorigin="0" data-flexorder="1">
                             <a href="" class="dropdown-toggle">Cervezas</a>
                             <ul class="d-menu" data-role="dropdown">
-                                <li><a href="">Nacionales</a></li>
-                                <li><a href="">Extranjeras</a></li>
+                                <li><a href="#Nacionales">Nacionales</a></li>
+                                <li><a href="#Extranjeras">Extranjeras</a></li>
                             </ul>
-                        </li>
+                        </li>             
                         <li data-flexorderorigin="1" data-flexorder="2">
                             <a href="" class="dropdown-toggle">Ayuda</a>
                             <ul class="d-menu" data-role="dropdown">
-                                <li><a href="">Como Comprar</a></li>
-                                <li><a href="#quien">Quienes Somos</a></li>
+                                <li><a href="#comprar">Como Comprar</a></li>
+                                <li><a href="#quienes">Quienes Somos</a></li>
                             </ul>
                         </li>
-                    </ul>
-                    <div class="app-bar-element place-right">
-                        <a class="dropdown-toggle fg-white"><span class="mif-enter"></span> Mi Cuenta</a>
-                        <div class="app-bar-drop-container place-right" data-role="dropdown" data-no-close="true">
-                            <div class="padding20">
-                                <form>
-                                    <h4 class="text-light">Tu Cuenta...</h4>
-                                    <div class="input-control text">
-                                        <span class="mif-user prepend-icon"></span>
-                                        <input type="text" placeholder="Usuario">
-                                    </div>
-                                    <div class="input-control text">
-                                        <span class="mif-lock prepend-icon"></span>
-                                        <input type="password" placeholder="Contraseña">
-                                    </div>
-                                    <label class="input-control checkbox small-check">
-                                        <input type="checkbox">
-                                        <span class="check"></span>
-                                        <span class="caption">Recordarme</span>
-                                    </label>
-                                    <div class="form-actions align-center">
-                                        <button class="button primary">Ingresar</button>
-                                    </div>
-                                </form>
-                            </div>
+
+                <li class="place-right no-hovered">
+                    <form>
+                        <div class="input-control text" style="width: 250px; margin-right: 10px">
+                            <input type="text" placeholder="Search...">
+                            <button class="button"><span class="mif-search"></span></button>
                         </div>
-                    </div>
-                <div class="app-bar-pullbutton automatic" style="display: none;"></div><div class="clearfix" style="width: 0;"></div><nav class="app-bar-pullmenu hidden flexstyle-app-bar-menu" style="display: none;"><ul class="app-bar-pullmenubar hidden app-bar-menu"></ul></nav></div>
-
-
-
+                    </form>
+                </li>
+            </ul>
 
 
 

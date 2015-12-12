@@ -1,6 +1,6 @@
 .panel:hover{
   border: 6px solid #fff;
-      box-shadow: 0 0 17px rgba(0,0,0,0.30);
+  box-shadow: 0 0 17px rgba(0,0,0,0.30);
 }
 
 
@@ -8,6 +8,7 @@
 a:hover{
   text-decoration: none;
 }
+
 a:visited {
     text-decoration: none;
     color: black;
@@ -41,4 +42,13 @@ a.ihover-gp:hover{
 }
 a.ihover-fb:hover{
   color: #3b5998;
+}
+
+.h-menu > li > a {
+  color: white;
+}
+
+.h-menu > li > a:hover {
+    background-color: ##3c3f41;
+    color: #ffffff;
 }
