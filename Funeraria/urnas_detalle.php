@@ -1,3 +1,8 @@
+<?php
+$id = $_GET['id'];
+$name = $_GET['name'];
+?>
+
 <!DOCTYPE html>
 <html>
   <head lang="en">
@@ -28,7 +33,7 @@
 <div class="page-content">
   <div class="container">
     <h2>
-      Urna - Piso Lisa
+      Urna - <?php echo $name ?>
     <hr class="bg-fun">
 
   </h2>
@@ -38,7 +43,7 @@
 
       <div class="row cells3">
         <div class="cell">
-            <img src="images/urnas/pino_lisa.jpg">
+            <img src="images/urnas/urna_<?php echo $id ?>.jpg">
         </div>
 
         <div class="cell colspan2">
@@ -69,7 +74,7 @@
           </div>
           <hr class="bg-fun">
           <div class="center">
-          <button class="button large-button bg-fun color-white">Consulte Precio y Planes</button>
+          <button class="button large-button bg-fun color-white">Consulte Precios y Planes</button>
         </div>
         </div><!-- colspan2 -->
 

@@ -21,7 +21,11 @@
 /* ************************************ */
 
 .bg-fun{
-background: #2774C0 !important;
+background: #2267AB !important;
+}
+
+.font-color-fun{
+  color:#2267AB;
 }
 
 .box{
@@ -37,11 +41,19 @@ background: #2774C0 !important;
   color: white;
 
 }
+.box-servicios > .grid > .row.cells4  > .cell {
+  padding-left: 10px;
+}
 
 .color-white{
   color: white !important;
 }
 
+
+.box > .grid > .row.cells3 > .cell {
+    padding-left: 4px;
+￼    padding-right: 4px;
+}
 
 /* ************************************ */
 
@@ -65,6 +77,28 @@ background: #2774C0 !important;
 
 .center {
     text-align: center;
+}
+
+.img-con {
+  width: 200px !important;
+
+}
+
+.input-control.textarea  {
+    width: 240px !important;
+}
+
+.text-grey{
+  color: #CCCCCC;
+}
+
+footer{
+  background: #2267AB !important;
+  color: white;
+}
+
+.tel{
+  color: white;
 }
 
 /*.panel:hover {
