@@ -5,7 +5,7 @@
 
         <div class="row cells3">
 
-          <div id="#quien"class="cell offset1">
+          <div id="#quienes"class="cell offset1">
                 <h4 class="">Acerca de Nosotros</h4>
                 <p class="">Somos la tienda más grande de Nada en Chile,
                   reunimos las mejores productos del país y las ponemos a disposición de la gente a lo largo y
@@ -45,5 +45,7 @@
       </div>
     </div>
 </footer>
+<script src="js/main.js"></script>
+
 </body>
 </html>

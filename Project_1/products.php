@@ -4,7 +4,6 @@
 ?>
 <!-- ############################################# -->
 	<div class="page-content">
-
 		<div class="container">
 			<div class="grid">
 
@@ -21,7 +20,7 @@
 						<h4>
 							Seleccionamos solo lo mejores Null del pais.
 						</h4>
-						<hr class="bg-green">
+						<hr class="bg-lightblue">
 					</div>
 				</div>
 
@@ -36,17 +35,17 @@
 						<!-- ############### cell product ############### -->
 							<div class="cell">
 								<div class="panel">
-									<?php echo '<a href="cerveza.php?id='.$_SESSION['product'][$row][0].'">' ?>
+									<?php echo '<a href="product.php?id='.$_SESSION['product'][$row][0].'">' ?>
 											<div class="content">
 												<div class="image-container">
 													<div class="frame">
-														<img src="images/cervezas/Bottleshot-IPA.png">
+														<?php echo '<img src="images/'.$_SESSION['product'][$row][5].'">' ?>
 													</div>
 												</div>
 											</div>
 											<div class="center">
 												<p><?php echo  $_SESSION['product'][$row][1] ?></p>
-												<button class="button success text-shadow">Detalle</button>
+												<button class="button info text-shadow">Detalle</button>
 											</div>
 									</a>
 								</div>
@@ -61,8 +60,8 @@
 					</br>
 					</br>
 					</br>
-
-				</div>
+					</br>
+			</div>
 
 	</div>
 <!-- ############################################# -->

@@ -9,8 +9,7 @@
 
 
 			HOME
-			<?php echo 'name['.$_SESSION['name'].']' ?>
-			<?php echo 'logout['.$_POST['logout'].']' ?>
+
 
 		</div><!-- grid -->
 	</div><!-- container -->

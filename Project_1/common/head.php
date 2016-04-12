@@ -1,6 +1,6 @@
 <?php
   session_start();
-	include("common/db_array.php")
+	include("common/db_array.php");
 ?>
 
 <!DOCTYPE html>
@@ -23,6 +23,9 @@
     <script src="js/metro.js"></script>
     <!--script src="js/docs.js"></script-->
     <script src="js/prettify/run_prettify.js"></script>
+		<!--script src="js/main.js"></script-->
+		<!--script src="js/jquery-1.12.3.min.js"></script-->
+
 
   </head>
 	<body>
