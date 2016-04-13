@@ -1,19 +1,17 @@
 $(document).ready(function() {
 
-	// function showDialog(id){
-	// 		var dialog = $(id).data('dialog');
-	// 		dialog.open();
-	// }
-	// function delay(sec) {
-	// 	setTimeout("", sec * 1000);
-	// 	document.forms[0].submit();
-	// 	return false;
-	// }
-	// if (document.getElementById("ismForm")) {
-	//     setTimeout("submitForm()", 5000); // set timout
-	// }
-
-	//click button add to car
+	// --------------------------------------------------
+	// open dialog when pay finish and redirect to home
+	$("button#thk").click( function() {
+	console.log('thk');
+	var dialog = $('#dialog').data('dialog');
+	        dialog.open();
+					setTimeout(function(){
+							location.replace('home.php?pay=ok');
+					}, 3000);
+		});
+	// --------------------------------------------------
+	//
 	$("button#cart_add").click( function() {
 		console.log('cart_add asdasda');
 		$.Notify({
@@ -39,24 +37,10 @@ $(document).ready(function() {
 		//
 		//
 		//     });
-
 		//$('span#cart').text(cart_count + 1);
-
 		setTimeout(function(){
 		    location.reload();
 		}, 2000);
-
-
-
-
 	});
-
-
-
-
-
-
-
-
 
 });// end document ready

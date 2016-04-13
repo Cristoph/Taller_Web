@@ -1,5 +1,8 @@
 <?php
 	include("common/head.php");
+	if(isset($_GET['pay'])){
+		$_SESSION['cart'] = array(); 
+	};
 	include("common/menu.php");
 ?>
 <!-- ############################################# -->
@@ -8,8 +11,7 @@
 		<div class="grid">
 
 
-			HOME
-
+				HOME
 
 		</div><!-- grid -->
 	</div><!-- container -->

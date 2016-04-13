@@ -1,6 +1,6 @@
 .panel:hover{
   border: 6px solid #fff;
-  box-shadow: 0 0 17px rgba(0,0,0,0.30);
+box-shadow: 0 0 4px rgba(0,0,0,0.30);
 }
 
 a:hover{
@@ -30,8 +30,6 @@ footer a, footer a:visited{
   text-align: center;
 }
 
-
-
 a.ihover-tw:hover{
   color: #2daae1;
 }
@@ -53,4 +51,17 @@ a.ihover-fb:hover{
 
 .notify-container{
 	padding-top: 64px !important;
+}
+
+.cart{
+	margin-bottom: 6px;
+	box-shadow: 0 0 4px rgba(0,0,0,0.30);
+}
+.cart h3{
+	margin-top: 0px;
+	padding-top: 8px;
+	padding-bottom: 2px;
+}
+.cart button{
+	margin-bottom: 51px;
 }

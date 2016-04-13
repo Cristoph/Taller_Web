@@ -8,13 +8,13 @@
 
   <div class="container">
     <div class="grid">
-      <ul class="breadcrumbs mini">
-                          <li><a href="home.php"><span class="icon mif-home"></span></a></li>
-                          <li><a href="products.php">Productos</a></li>
-                          <li><a href="#"></a>Pack</li>
-                          <li><a href="#"><?php echo $_SESSION['product'][1] ?></a></li>
-                      </ul>
-                    </div>
+      <ul class="breadcrumbs2 mini">
+          <li><a href="home.php"><span class="icon mif-home"></span></a></li>
+          <li><a href="products.php">Productos</a></li>
+          <li><a href="products.php">Pack</a></li>
+          <li><a href=""><?php echo $_SESSION['product'][1] ?></a></li>
+      </ul>
+    </div>
   </div>
 
   <div class="container">
@@ -49,24 +49,15 @@
               <h3>$<?php echo $_SESSION['product'][2] ?></h3>
             </div>
 
-
-						<div data-role="dialog" id="dialog">
-						    <h1>Simple dialog</h1>
-						    <p>
-						        Dialog :: Metro UI CSS - The front-end framework
-						        for developing projects on the web in Windows Metro Style.
-						    </p>
-						</div>
-						<script>
-
-						</script>
-
             <div class="cell">
-							<!-- <form class="" action="cart.php" method="get" id="ismForm"> -->
-
+							<form class="" action="cart.php" method="get" id="ismForm">
 									<input type="hidden" name="prod_id" value="<?php echo $_SESSION['product'][0] ?> ">
+								<?php if(!in_array((int)$_SESSION['product'][0], $_SESSION['cart'])){ ?>
 									<button id="cart_add" class="button primary text-shadow">Agregar al Carro</button>
-							<!-- </form> -->
+								<?php }else{ ?>
+									<a href="cart.php" type="button" id="cart_add" class="button success disabled">Agregado</a>
+								<?php } ?>
+							</form>
 						</div>
 
           </div>

@@ -6,6 +6,16 @@
 	<div class="page-content">
 		<div class="container">
 			<div class="grid">
+				<ul class="breadcrumbs2 mini">
+						<li><a href="home.php"><span class="icon mif-home"></span></a></li>
+						<li><a href="products.php">Productos</a></li>
+						<li><a href="products.php">Pack</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="grid">
 
 				<div class="row">
 					<div class="cell">
@@ -44,8 +54,8 @@
 												</div>
 											</div>
 											<div class="center">
-												<p><?php echo  $_SESSION['product'][$row][1] ?></p>
-												<button class="button info text-shadow">Detalle</button>
+												<h4><?php echo  $_SESSION['product'][$row][1] ?></h4>
+												<button class="button primary text-shadow">Detalle</button>
 											</div>
 									</a>
 								</div>
