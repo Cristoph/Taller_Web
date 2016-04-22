@@ -1,5 +1,5 @@
 <?php
-	include("common/head.php");
+include("common/head.php");
 // add id product to cart
 if(isset($_GET['prod_id'])){
 	if(!isset($_SESSION['cart'])){
@@ -16,7 +16,6 @@ if(isset($_GET['del_id'])){
 			//$find = 'ok';
 			$_SESSION['cart'] = array_values($_SESSION['cart']);
 	};
-
 };
 
 	$total = 0;
@@ -79,7 +78,7 @@ if(isset($_GET['del_id'])){
 												<div class="cell">
 													<div class="image-container">
 														<div class="frame">
-															<?php echo '<img src="images/'.$_SESSION['product'][$i][5].'">' ?>
+															<?php echo '<img src="images/'.$_SESSION['product'][$i]['image'].'">' ?>
 														</div>
 													</div>
 												</div>
@@ -95,10 +94,10 @@ if(isset($_GET['del_id'])){
 														</div>
 													</div>
 													<div class="cell">
-															<h5>Valor: <span class="mif-dollar2"><?php echo $_SESSION['product'][$i][2] ?></span></h5>
+															<h5>Valor: <span class="mif-dollar2"><?php echo $_SESSION['product'][$i]['price'] ?></span></h5>
 													</div>
 													<div class="cell">
-														<a href="cart.php?del_id=<?php echo $_SESSION['product'][$i][0]?>" class="button mini-button alert">Eliminar</a>
+														<a href="cart.php?del_id=<?php echo $_SESSION['product'][$i]['id']?>" class="button mini-button alert">Eliminar</a>
 
 													</div>
 												</div>
@@ -112,7 +111,7 @@ if(isset($_GET['del_id'])){
 							</div>
 						<!-- ############### end cell product ############### -->
 					<?php
-					$total += $_SESSION['product'][$i][2];
+					$total += $_SESSION['product'][$i]['price'];
 
 					} ?>
 					<!-- ############################################################### -->

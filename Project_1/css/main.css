@@ -5,12 +5,17 @@ box-shadow: 0 0 4px rgba(0,0,0,0.30);
 
 a:hover{
   text-decoration: none;
+
 }
 
 a:visited {
     text-decoration: none;
     color: black;
 
+}
+
+.app-bar.darcula .app-bar-element:hover,.app-bar.darcula .app-bar-element:hover{
+  background-color: #3C3F41;
 }
 
 hr {
@@ -20,6 +25,7 @@ hr {
 footer{
   background:url(../images/footer.png);
   color: white;
+
 }
 
 footer a, footer a:visited{

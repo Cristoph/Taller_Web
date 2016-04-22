@@ -12,7 +12,7 @@
           <li><a href="home.php"><span class="icon mif-home"></span></a></li>
           <li><a href="products.php">Productos</a></li>
           <li><a href="products.php">Pack</a></li>
-          <li><a href=""><?php echo $_SESSION['product'][1] ?></a></li>
+          <li><a href=""><?php echo $_SESSION['product']['name'] ?></a></li>
       </ul>
     </div>
   </div>
@@ -23,36 +23,36 @@
       <div class="row cells3">
         <div class="cell colspan2">
 
-          <h3><?php echo $_SESSION['product'][1] ?></h3>
+          <h3><?php echo $_SESSION['product']['name'] ?></h3>
           <hr class="bg-lightblue">
 
           <div class="row cells2">
             <div class="cell">
-              <div class="rating" data-role="rating" data-size="normal" data-value="<?php echo $_SESSION['product'][4] ?>"></div>
+              <div class="rating" data-role="rating" data-size="normal" data-value="<?php echo $_SESSION['product']['rating'] ?>"></div>
             </div>
 
             <div class="cell">
-              <p>Stock disponible: <span><?php echo $_SESSION['product'][3] ?> unidades</span></p>
+              <p>Stock disponible: <span><?php echo $_SESSION['product']['stock'] ?> unidades</span></p>
             </div>
           </div>
 
           <hr class="bg-lightblue">
           <!--blockquote-->
               <p>
-                <?php echo $_SESSION['product'][6] ?>
+                <?php echo $_SESSION['product']['detail'] ?>
               </p>
           <!--/blockquote-->
           <hr class="bg-lightblue">
 
           <div class="row cells4">
             <div class="cell offset1">
-              <h3>$<?php echo $_SESSION['product'][2] ?></h3>
+              <h3>$<?php echo $_SESSION['product']['price'] ?></h3>
             </div>
 
             <div class="cell">
 							<form class="" action="cart.php" method="get" id="ismForm">
-									<input type="hidden" name="prod_id" value="<?php echo $_SESSION['product'][0] ?> ">
-								<?php if(!in_array((int)$_SESSION['product'][0], $_SESSION['cart'])){ ?>
+									<input type="hidden" name="prod_id" value="<?php echo $_SESSION['product']['id'] ?> ">
+								<?php if(!in_array((int)$_SESSION['product']['id'], $_SESSION['cart'])){ ?>
 									<button id="cart_add" class="button primary text-shadow">Agregar al Carro</button>
 								<?php }else{ ?>
 									<a href="cart.php" type="button" id="cart_add" class="button success disabled">Agregado</a>
@@ -65,7 +65,7 @@
       </div><!-- end cell[1] colspan2-->
 
         <div class="cell">
-            <img alt="" class="tr_all_hover" id="zoom_image" src="images/<?php echo $_SESSION['product'][5] ?>">
+            <img alt="" class="tr_all_hover" id="zoom_image" src="images/<?php echo $_SESSION['product']['image'] ?>">
         </div>
 
 

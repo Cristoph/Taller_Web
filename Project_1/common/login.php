@@ -1,30 +1,21 @@
 <?php
-	$user="user";
-	$pass="1234";
-	$name="John Smith";
+// login
+$query = mysql_query('SELECT * FROM User WHERE user="'.$_POST['user'].'" and pass="'.$_POST['pass'].'"');
+$result = mysql_fetch_assoc($query);
 
-
+if(isset($result['user'])){
+	$_SESSION['name']=$result['name'];
+}else{
+	// set flag error user/pass
+}
+// destroy if logout
 if(isset($_POST['logout'])){
 	session_destroy();
+	header("Location: home.php");
+	exit;
 };
-
-if(isset($_POST['user'])){
-if($_POST['user']==$user && $_POST['pass']==$pass){
-		$_SESSION['name']=$name;
-		//$i = array();
-		//$_SESSION['cart'] = $a;
-		//echo "bienvenido ".$_SESSION['nombre'];
-	}
-}
-
-
-
-
 ?>
-
-
-
-<!-- <script>
+<!--<script>
 $.Notify({
     caption: 'Notify title',
     content: 'Notify content',
@@ -35,8 +26,6 @@ $.Notify({
 </script> -->
 
 <?php if(!isset($_SESSION['name'])){ ?>
-
-
 
 		<a class="dropdown-toggle fg-white"><span class="mif-enter"></span> Ingresar</a>
 		<div class="app-bar-drop-container place-right" data-role="dropdown" data-no-close="true">

@@ -45,16 +45,16 @@
 						<!-- ############### cell product ############### -->
 							<div class="cell">
 								<div class="panel">
-									<?php echo '<a href="product.php?id='.$_SESSION['product'][$row][0].'">' ?>
+									<?php echo '<a href="product.php?id='.$_SESSION['product'][$row]['id'].'">' ?>
 											<div class="content">
 												<div class="image-container">
 													<div class="frame">
-														<?php echo '<img src="images/'.$_SESSION['product'][$row][5].'">' ?>
+														<?php echo '<img src="images/'.$_SESSION['product'][$row]['image'].'">' ?>
 													</div>
 												</div>
 											</div>
 											<div class="center">
-												<h4><?php echo  $_SESSION['product'][$row][1] ?></h4>
+												<h4><?php echo  $_SESSION['product'][$row]['detail'] ?></h4>
 												<button class="button primary text-shadow">Detalle</button>
 											</div>
 									</a>
